@@ -1,0 +1,100 @@
+section.calculator {
+  @include flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  background-color: $primary-color;
+  padding: 2rem 1rem;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    max-width: 375px;
+    width: 60%;
+  }
+
+  .inputField {
+    width: 85%;
+    position: relative;
+
+    img {
+      width: 30px;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  input {
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1.2rem;
+  }
+}
+
+button {
+  font-family: "Saira Condensed", sans-serif;
+  padding: 0.5rem;
+  width: 70%;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: $secundary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    background-color: darken($secundary-color, 10%);
+  }
+}
+
+.result {
+  background-color: white;
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateX(122%);
+  transition: all ease-in-out 0.3s;
+
+  @include flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-family: "Saira Condensed", sans-serif;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.meat,
+.soda,
+.beer {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.amount {
+  @include flex;
+  gap: 2rem;
+
+  img.resultIcons {
+    width: 70px;
+    margin-right: 1rem;
+  }
+}
+
+.active {
+  transform: translateX(0%);
+}

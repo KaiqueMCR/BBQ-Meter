@@ -1,0 +1,50 @@
+@media screen and (min-width: 1000px) {
+  main {
+    flex-direction: row;
+  }
+
+  section.calculator {
+    width: 45vw;
+    height: 100vh;
+
+    .inputField {
+      width: 80%;
+    }
+  }
+
+  section.introduction {
+    height: 100vh;
+    justify-content: space-between;
+    width: 75vw;
+
+    #logo {
+      align-self: flex-start;
+    }
+
+    h1 {
+      font-size: 2rem;
+      width: 80%;
+      text-align: left;
+    }
+
+    .roll {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-height: 1025px) {
+  section.calculator {
+    justify-content: center;
+  }
+
+  section.introduction {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  section.calculator .inputField {
+    width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBQ Meter</title>
+
+    <link rel="stylesheet" href="Scss/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Saira+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="introduction">
+        <img id="logo" src="./images/logo.png" alt="BBQ Meter logo" />
+
+        <h1>
+          Save money on your barbecue! Know how much you will need without
+          waste.
+        </h1>
+
+        <img
+          class="illustration"
+          src="./images/Illustration.png"
+          alt="happy couple BBQ"
+        />
+
+        <a class="roll" href="#calc">Let's BBQ!</a>
+      </section>
+
+      <section class="calculator" id="calc">
+        <img src="./images/blackLogo.png" alt="BBQ Meter black logo" />
+
+        <div class="inputField">
+          <img src="./images/casal.png" alt="couple" />
+          <input
+            type="number"
+            id="alcoholicAdults"
+            name="adults"
+            placeholder="Adults (Alcoholic)"
+          />
+        </div>
+        <div class="inputField">
+          <img src="./images/casal.png" alt="couple" />
+          <input
+            type="number"
+            id="nonAlcoholicAdults"
+            name="adults"
+            placeholder="Adults (non Alcoholic)"
+          />
+        </div>
+        <div class="inputField">
+          <img src="./images/children.png" alt="children" />
+          <input type="number" id="kids" name="kids" placeholder="Kids" />
+        </div>
+        <div class="inputField">
+          <img src="./images/time.png" alt="time" />
+          <input type="number" id="time" name="time" placeholder="Time (h)" />
+        </div>
+
+        <button id="calculate">BBQ!</button>
+
+        <div id="result" class="result">
+          <h2>you will need:</h2>
+
+          <div class="amount">
+            <div class="meat">
+              <img
+                class="resultIcons"
+                src="./images/meat (1).png"
+                alt="Meat icon"
+              />
+              <p id="meat"></p>
+            </div>
+            <div class="soda">
+              <img
+                class="resultIcons"
+                src="./images/coke.png"
+                alt="Soda icon"
+              />
+              <p id="soda"></p>
+            </div>
+            <div class="beer">
+              <img
+                class="resultIcons"
+                src="./images/beer.png"
+                alt="Beer icon"
+              />
+              <p id="beer"></p>
+            </div>
+          </div>
+
+          <button id="reset">Go back</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

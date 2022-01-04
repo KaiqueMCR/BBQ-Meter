@@ -1,0 +1,33 @@
+section.introduction {
+  width: 100%;
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  height: 100vh;
+
+  img.illustration {
+    max-width: 500px;
+    width: 80%;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+  }
+
+  a.roll {
+    font-family: "Saira Condensed", sans-serif;
+    padding: 0.5rem;
+    width: 60%;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: $secundary-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    text-align: center;
+  }
+}

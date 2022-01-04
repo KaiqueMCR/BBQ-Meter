@@ -1,0 +1,7 @@
+$primary-color: #0094ff;
+$secundary-color: #000aff;
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+}
