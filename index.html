@@ -43,6 +43,7 @@
             type="number"
             id="alcoholicAdults"
             name="adults"
+            min="0"
             placeholder="Adults (Alcoholic)"
           />
         </div>
@@ -52,16 +53,29 @@
             type="number"
             id="nonAlcoholicAdults"
             name="adults"
+            min="0"
             placeholder="Adults (non Alcoholic)"
           />
         </div>
         <div class="inputField">
           <img src="./images/children.png" alt="children" />
-          <input type="number" id="kids" name="kids" placeholder="Kids" />
+          <input
+            type="number"
+            id="kids"
+            name="kids"
+            min="0"
+            placeholder="Kids"
+          />
         </div>
         <div class="inputField">
           <img src="./images/time.png" alt="time" />
-          <input type="number" id="time" name="time" placeholder="Time (h)" />
+          <input
+            type="number"
+            id="time"
+            name="time"
+            min="0"
+            placeholder="Time (h)"
+          />
         </div>
 
         <button id="calculate">BBQ!</button>
