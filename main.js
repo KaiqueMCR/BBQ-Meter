@@ -27,7 +27,7 @@ function sodaAmountByTime(time) {
   }
 }
 
-document.getElementById('calculate').onclick = function calcs() {
+function calcs() {
   let meatAmount =
     meatAmountByTime(time.value) * alcoholicAdultsNumber.value +
     (meatAmountByTime(time.value) / 2) * kidsNumber.value +
@@ -50,7 +50,7 @@ document.getElementById('calculate').onclick = function calcs() {
   document.getElementById('result').classList.toggle('active')
 }
 
-document.getElementById('reset').onclick = function reset() {
+function reset() {
   alcoholicAdultsNumber.value = ''
   nonAlcoholicAdultsNumber.value = ''
   kidsNumber.value = ''
@@ -58,3 +58,10 @@ document.getElementById('reset').onclick = function reset() {
 
   document.getElementById('result').classList.toggle('active')
 }
+
+document.addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    if (document.getElementById('result').classList.contains('active')) reset()
+    else calcs()
+  }
+})
