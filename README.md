@@ -1,6 +1,6 @@
 # Barbecue Meter
 
-Web application that calculates the amount of meat and drink for a barbecue, having as parameters the number of people and duration of the event.
+Webpage that calculates the amount of meat and drink for a barbecue, having as parameters the number of people and duration of the event.
 
 ## Screenshots
 
