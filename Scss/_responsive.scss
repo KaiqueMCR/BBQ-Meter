@@ -7,7 +7,7 @@
     width: 45vw;
     height: 100vh;
 
-    .inputField {
+    #input {
       width: 80%;
     }
   }
@@ -46,5 +46,11 @@
 @media screen and (max-width: 300px) {
   section.calculator .inputField {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section.calculator .inputField {
+    width: 60%;
   }
 }
