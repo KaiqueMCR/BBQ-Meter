@@ -4,8 +4,8 @@ Webpage that calculates the amount of meat and drink for a barbecue, having as p
 
 ## Screenshots
 
-![App Screenshot](/images/screenshot.jpeg)
-![App Screenshot Mobile](/images/screenshotMobile.png)
+![App Screenshot](assets/images/screenshot.jpeg)
+![App Screenshot Mobile](assets/images/screenshotMobile.png)
 
 ## Stack used
 
