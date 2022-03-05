@@ -11,6 +11,7 @@ body {
   height: 100vh;
   position: fixed;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 main {
