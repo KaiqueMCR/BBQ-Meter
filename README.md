@@ -1,4 +1,8 @@
-# Barbecue Meter
+<div align="center">
+  <img src="./assets/images/logo.png">
+</div>
+
+#
 
 <div align="center">
 
